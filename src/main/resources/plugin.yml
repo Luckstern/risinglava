@@ -1,0 +1,19 @@
+name: risinglava
+main: io.github.luckstern.risinglava.main
+version: 1.16.5
+author: Luckstern
+api-version: 1.16
+commands:
+    startlava:
+        description: Start the rising lava.
+        usage: /<command>
+        permission: risinglava.startlava
+        permission-message: You don't have permission to execute that command!
+permissions:
+    risinglava.*:
+        description: Gives permission for all risinglava commands.
+        children:
+            risinglava.startlava: false
+    risinglava.startlava:
+        description: Allows a player to start the rising lava
+        default: op
